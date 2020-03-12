@@ -11,7 +11,7 @@ const initialState = {
 }
 
 //Create context
-export const GlobalContext = createContext(initialState)
+const GlobalContext = createContext(initialState)
 
 //Provider component
 export const GlobalProvider = ({children}) => {
@@ -23,3 +23,5 @@ export const GlobalProvider = ({children}) => {
        {children} 
     </GlobalContext.Provider>) 
 }
+
+export default GlobalProvider

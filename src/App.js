@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header/>
       <div className="container">
         <Balance/>
@@ -17,7 +17,7 @@ function App() {
         <Transactions/>
         <AddTransaction/>
       </div>
-    </div>
+    </GlobalProvider>
   )
 }
 
